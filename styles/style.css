@@ -1,10 +1,75 @@
-/* Font Set */
+/* Font */
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-/* Universal Styles */
+/* Universal */
 * {
     margin: 0;
     padding: 0;
     font-family: "Work Sans", serif;
     font-weight: 700;
+}
+
+/* Basic Colors */
+.black {
+    color: #131313;
+}
+.orange {
+    color: #FF900E;
+}
+
+/* Header-Nav */
+nav {
+    background-color: rgba(255, 144, 14, 0.10);
+}
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 150px;
+}
+.logo {
+    font-size: 2.5rem;
+}
+.nav-list li {
+    list-style-type: none;
+}
+.nav-list {
+    display: flex;
+    gap: 50px;
+}
+.nav-list a {
+    text-decoration: none;
+    font-weight: 400;
+}
+
+/* Extra small screen */
+@media (max-width: 480px) {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav-content {
+        text-align: center;
+        flex-direction: column;
+        gap: 30px;
+        padding: 20px 0px 20px 0px;
+    }
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+    }
+    .nav-list a {
+        text-align: center;
+    }
+    .logo {
+        font-size: 2rem;
+        text-align: center;
+    }
 }
