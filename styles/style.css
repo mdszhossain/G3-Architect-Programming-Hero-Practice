@@ -8,6 +8,15 @@
     font-family: "Work Sans", serif;
     font-weight: 700;
 }
+.primary-btn {
+    background-color: #FF900E;
+    padding: 20px 25px;
+    font-size: 1.25rem;
+    color: white;
+    font-weight: 600;
+    border: 0;
+    border-radius: 8px;
+}
 
 /* Basic Colors */
 .black {
@@ -42,6 +51,40 @@ nav {
     font-weight: 400;
 }
 
+/* Banner Section */
+.banner-container {
+    background-color: rgba(255, 144, 14, 0.10);
+}
+.banner-heading {
+    font-size: 4rem;
+    text-align: center;
+    padding-top: 40px;
+}
+.banner-description {
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 30px;
+    line-height: 1.625rem;
+}
+.explore-btn-container {    
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+.banner-img-container {
+    display: flex;
+    justify-content: center;
+}
+.banner-image {
+    width: 1190px;
+    height: 700px;
+    background-image: url('../assets/main-image/banner.png');
+    background-size: cover;
+    border-radius: 15px;
+    margin: 40px 0px;
+}
+
 /* Extra small screen */
 @media (max-width: 480px) {
     
@@ -66,6 +109,23 @@ nav {
         font-size: 2rem;
         text-align: center;
     }
+
+    /* Banner Section */
+    .banner-heading {
+        font-size: 2rem;
+        padding-top: 20px;
+    }
+    .primary-btn {
+        padding: 15px 20px;
+    }
+    .banner-img-container {
+        /* width: 90vw; */
+        justify-content: center;
+    }
+    .banner-image {
+        width: 95vw;
+        height: 200px;
+    }
 }
 
 /* Small Screen */
@@ -81,6 +141,18 @@ nav {
     .nav-list {
         gap: 15px;
     }
+
+    /* Banner Section */
+    .banner-heading {
+        font-size: 3rem;
+    }
+    .primary-btn {
+        padding: 15px 20px;
+    }
+    .banner-image {
+        width: 95vw;
+        height: 350px;
+    }
 }
 
 /* Medium Screen */
@@ -95,6 +167,27 @@ nav {
     .nav-list {
         gap: 40px;
     }
+
+    /* Banner Section */
+    .banner-heading {
+        font-size: 3.5rem;
+    }
+    .banner-description-container {
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+    }
+    .banner-description {
+        width:75vw;
+    }
+    .primary-btn {
+        padding: 15px 20px;
+    }
+    .banner-image {
+        width: 95vw;
+        height: 400px;
+    }
+
 }
 
 /* Large Device */
@@ -108,5 +201,11 @@ nav {
     }
     .nav-list {
         gap: 50px;
+    }
+
+    /* Banner Section */
+    .banner-image {
+        width: 95vw;
+        height: 500px;
     }
 }
