@@ -245,6 +245,8 @@ nav {
     .team-feature-image img {
         height: 300px;
     }
+
+    /* Second Feature */
     .second-feature {
         flex-direction: column;
     }
@@ -252,8 +254,8 @@ nav {
         width: 90%;
     }
     .experiance-tag {
-        width: 300;
-        height: 120;
+        width: 300px;
+        height: 120px;
         left: 0px;
         top: 0px;
     }
@@ -337,6 +339,47 @@ nav {
         display: flex;
         justify-content: center;
     }
+
+    /* Second Feature */
+    .second-feature {
+        flex-direction: column;
+    }
+    .second-feature-image img {
+        width: 90%;
+    }
+    .experiance-tag {
+        width: 300px;
+        height: 120px;
+        left: 0px;
+        top: 0px;
+    }
+    .experiance-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .feature-blocks {
+        height: 300px;
+        width: 400px;
+    }
+    .second-feature-heading {
+        font-size: 3rem;
+        text-align: center;
+    }
+    .second-feature-description {
+        text-align: center;
+    }
+    .feature-block-group {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .second-feature-img {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
 }
 
 /* Medium Screen */
@@ -388,6 +431,38 @@ nav {
         font-size: 3rem;
     }
 
+    /* Second-Feature */
+    .second-feature {
+        flex-direction: column;
+    }
+    .second-feature-heading {
+        text-align: center;
+        font-size: 4rem;
+    }
+    .second-feature-description {
+        text-align: center;
+    }
+    .feature-block-group {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .second-feature-img {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .experiance-tag {
+        left: 0px;
+        top: 0px;
+    }
+    .experiance-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
 }
 
 /* Large Device */
@@ -415,5 +490,32 @@ nav {
     }
     .team-feature-image img {
         height: 200px;
+    }
+    /* Second-Feature */
+    .second-feature-image img {
+        width: 70%;
+    }
+    .feature-blocks {
+        width: 400px;
+    }
+    .second-feature-description {
+        width: 350px;
+    }
+    .experiance-tag {
+        top: 20px;
+        left: 0px;
+    }
+    .second-feature-img {
+        display: flex;
+        justify-content: center;
+        width: 500px;
+    }
+    .experiance-btn {
+        display: flex;
+        justify-content: center;
+    }
+    .second-feature {
+        justify-content: space-around;
+        align-items: center;
     }
 }
