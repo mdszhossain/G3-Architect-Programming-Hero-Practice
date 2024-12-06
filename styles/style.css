@@ -179,6 +179,43 @@ nav {
     align-items: center;
     margin-top: 100px;
 }
+
+/* Facts */
+.individual-block {
+    height: 250px;
+    width: 250px;
+    border: 1px solid #FF900E;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.fact-number {
+    font-size: 2.813rem;
+    color: #424242;
+}
+.fact-tagline {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #727272;
+}
+.facts-blocks {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+}
+.fact-heading {
+    font-size: 2.813rem;
+}
+.fact-description {
+    font-weight: 400; 
+    margin-top: 30px;
+}
+.facts-text {
+    margin-left: 40px;
+    margin-top: 50px;
+}
 /* Extra small screen */
 @media (max-width: 480px) {
     
@@ -286,6 +323,20 @@ nav {
         justify-content: center;
         margin-top: 20px;
     }
+
+    /* Facts */
+    .facts-text {
+        margin-left: 0px;
+        margin-top: 40px;
+    }
+    .fact-heading, .fact-description {
+        text-align: center;
+    }
+    .facts-blocks {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
 }
 
 /* Small Screen */
@@ -380,6 +431,23 @@ nav {
         justify-content: center;
         margin-top: 20px;
     }
+
+    /* Facts */
+    .facts-blocks {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    .individual-block {
+        width: 400px;
+    }
+    .fact-heading, .fact-description {
+        text-align: center;
+    }
+    .facts-text {
+        margin-left: 0px;
+    }
+
 }
 
 /* Medium Screen */
@@ -463,6 +531,11 @@ nav {
         margin-top: 20px;
     }
 
+    /* Facts */
+    .individual-block {
+        width: 170px;
+    }
+
 }
 
 /* Large Device */
@@ -517,5 +590,9 @@ nav {
     .second-feature {
         justify-content: space-around;
         align-items: center;
+    }
+    .individual-block {
+        width: 220px;
+        height: 220px;
     }
 }
