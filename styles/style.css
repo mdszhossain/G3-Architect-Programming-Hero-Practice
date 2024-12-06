@@ -91,8 +91,8 @@ nav {
 /* Feature Section */
 .team-feature-image {
     display: grid;
-    grid-template-columns: repeat(2, 342px);
-    gap: 30px;
+    grid-template-columns: repeat(2, 300px);
+    gap: 10px;
 }
 .feature-heading {
     font-size: 2.813rem;
@@ -111,6 +111,9 @@ nav {
     justify-content: space-around;
     align-items: center;
     margin-top: 40px;
+}
+.team-feature-image img {
+    height: 300px;
 }
 
 /* Extra small screen */
@@ -154,6 +157,31 @@ nav {
         width: 95vw;
         height: 200px;
     }
+
+    /* Feature Section */
+    .team-feature-image {
+        grid-template-columns: repeat(1, 100%);
+    }
+    .feature-team-container {
+        flex-direction: column;
+    }
+    .feature-heading, .feature-description {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .feature-heading {
+        font-size: 2rem;
+    }
+    .feature-description {
+        width: 90vw;
+    }
+    .feature-button {
+        display: flex;
+        justify-content: center;
+    }
+    .team-feature-image img {
+        height: 300px;
+    }
 }
 
 /* Small Screen */
@@ -180,6 +208,32 @@ nav {
     .banner-image {
         width: 95vw;
         height: 350px;
+    }
+    
+    /* Feature Section */
+    .feature-team-container {
+        flex-direction: column;
+    }
+    .team-feature-image {
+        grid-template-columns: repeat(2, 200px);
+        gap: 15px;
+    }
+    .team-feature-image img {
+        height: 200px;    
+    }
+    .feature-heading {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-top: 20px;
+    }
+    .feature-description {
+        text-align: center;
+        width: 70vw;
+        margin-top: 20px;
+    }
+    .feature-button {
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -216,6 +270,22 @@ nav {
         height: 400px;
     }
 
+    /* Feature Section */
+    .feature-team-container {
+        flex-direction: column;
+    }
+    .feature-heading, .feature-description {
+        text-align: center;
+        margin-top: 20px;
+    }
+    .feature-button {
+        display: flex;
+        justify-content: center;
+    }
+    .feature-heading {
+        font-size: 3rem;
+    }
+
 }
 
 /* Large Device */
@@ -235,5 +305,13 @@ nav {
     .banner-image {
         width: 95vw;
         height: 500px;
+    }
+    /* Feature Section */
+    .team-feature-image {
+        grid-template-columns: repeat(2, 200px);
+        gap: 10px;
+    }
+    .team-feature-image img {
+        height: 200px;
     }
 }
