@@ -116,6 +116,69 @@ nav {
     height: 300px;
 }
 
+/* Second-Feature */
+.second-feature-des-block {
+    padding: 20px;
+}
+.block-heading {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+.block-description {
+    font-weight: 400;
+    line-height: 1.625rem;
+}
+.feature-blocks {
+    background-color: white;
+    box-shadow: 0px 0px 20px #efefef;
+    border-radius: 15px;
+    width: 520px;
+    height: 170px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.second-feature-heading {
+    font-size: 2.813rem;
+    margin-top: 30px;
+}
+.second-feature-description {
+    font-weight: 400;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    line-height: 1.625rem;
+}
+.experiance-tag {
+    background-color: #FF900E;
+    height: 150px;
+    width: 250px;
+    color: white;
+    font-size: 3rem;
+    line-height: 50px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    position: relative;
+    top: -80px;
+    left: -80px;
+}
+.experience-word {
+    font-weight: 400;
+    font-size: 1.563rem;
+    line-height: 40px;
+}
+.second-feature-image img {
+    width: 550px;
+}
+.second-feature {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px;
+}
 /* Extra small screen */
 @media (max-width: 480px) {
     
@@ -181,6 +244,45 @@ nav {
     }
     .team-feature-image img {
         height: 300px;
+    }
+    .second-feature {
+        flex-direction: column;
+    }
+    .second-feature-image img {
+        width: 90%;
+    }
+    .experiance-tag {
+        width: 300;
+        height: 120;
+        left: 0px;
+        top: 0px;
+    }
+    .experiance-btn {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .feature-blocks {
+        height: 300px;
+        width: 300px;
+    }
+    .second-feature-heading {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .second-feature-description {
+        text-align: center;
+    }
+    .feature-block-group {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .second-feature-img {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
     }
 }
 
